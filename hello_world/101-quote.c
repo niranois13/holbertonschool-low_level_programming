@@ -6,7 +6,7 @@
 */
 int main(void)
 {
-	char msg[99]
+	char msg[99];
 	strcpy(msg, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
 	return (0);
 }
