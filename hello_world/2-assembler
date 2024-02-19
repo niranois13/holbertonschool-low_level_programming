@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc $CFILE -o output_name.s
