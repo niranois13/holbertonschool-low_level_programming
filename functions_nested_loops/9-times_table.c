@@ -17,9 +17,9 @@ void times_table(void)
 
 			if (produit < 10 && b < 9)
 			{
+				_putchar(' ');
 				_putchar('0' + produit);
 				_putchar(',');
-				_putchar(' ');
 				_putchar(' ');
 			}
 			else if (produit >= 10 && b < 9)
@@ -31,6 +31,7 @@ void times_table(void)
 			}
 			else if (produit < 10 && b == 9)
 			{
+				_putchar(' ');
 				_putchar('0' + produit);
 			}
 			else if (produit >= 10 && b == 9)
