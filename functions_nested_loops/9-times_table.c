@@ -12,34 +12,26 @@ void times_table(void)
 
 	do {
 		b = 0;
-		do {
-			int produit = a * b;
+			do {
+			int product = a * b;
 
-			if (produit < 10 && b == 0)
+			if (b > 0)
 			{
-				_putchar('0' + produit);
-			}
-			if (produit < 10 && b < 9 && b > 0)
-			{
+				_putchar(',');
 				_putchar(' ');
-				_putchar('0' + produit);
 			}
-			else if (produit >= 10 && b < 9 && b > 0)
+			if (product < 10)
 			{
-				_putchar(produit / 10 + '0');
-				_putchar(produit % 10 + '0');
+				if (b > 0)
+				{
+					_putchar(' ');
+				}
+				_putchar(product + '0');
 			}
-			_putchar(',');
-			_putchar(' ');
-			if (produit < 10 && b == 9)
+			else
 			{
-				_putchar(' ');
-				_putchar('0' + produit);
-			}
-			else if (produit >= 10 && b == 9)
-			{
-				_putchar(produit / 10 + '0');
-				_putchar(produit % 10 + '0');
+				_putchar(product / 10 + '0');
+				_putchar(product % 10 + '0');
 			}
 		b++;
 		} while (b <= 9);
