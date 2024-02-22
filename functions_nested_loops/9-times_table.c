@@ -15,6 +15,12 @@ void times_table(void)
 		do {
 			int produit = a * b;
 
+			if (produit == 0)
+			{
+				_putchar('0' + produit);
+				_putchar(',');
+				_putchar(' ');
+			}
 			if (produit < 10 && b < 9)
 			{
 				_putchar(' ');
