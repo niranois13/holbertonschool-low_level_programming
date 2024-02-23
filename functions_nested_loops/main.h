@@ -11,3 +11,4 @@ int print_last_digit(int);
 void jack_bauer(void);
 void times_table(void);
 int calculate_product(int a, int b);
+int add(int, int);
