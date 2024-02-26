@@ -13,3 +13,4 @@ void times_table(void);
 int calculate_product(int a, int b);
 int add(int, int);
 void print_to_98(int n);
+int _isupper(int c);

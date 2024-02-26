@@ -10,10 +10,15 @@ int main(void)
 
 {
 	int num = 00;
+
 	for (num = 00 ; num <= 98 ; ++num)
 	{
-		putchar((num/10)+'0');
-		putchar ((num%10)+'0');
+		if ((num / 10) == (num % 10))
+		continue;
+
+		putchar((num / 10) + '0');
+		putchar((num % 10) + '0');
+
 		if (num < 98)
 		{
 			putchar(',');
@@ -26,4 +31,5 @@ int main(void)
 	}
 
 	return (0);
+
 }
