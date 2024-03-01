@@ -7,7 +7,7 @@
 int _atoi(char *s)
 
 {
-	int result = 0;
+	unsigned int result = 0;
 	int sign = 1;
 	int digit;
 
@@ -38,6 +38,5 @@ int _atoi(char *s)
 		}
 	}
 
-	result = result * sign;
-	return (result);
+	return (result * sign);
 }
