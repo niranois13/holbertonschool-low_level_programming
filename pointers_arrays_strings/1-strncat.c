@@ -4,6 +4,7 @@
 * @src : string to be added
 * @dest : strings elements are bing added to
 * @n : number of bytes from *src to be added
+* Return: dest
 */
 char *_strncat(char *dest, char *src, int n)
 
@@ -16,12 +17,17 @@ char *_strncat(char *dest, char *src, int n)
 		dest++;
 	}
 
-	for (i = 0 ; i < n ; i++)
+	for (i = 0 ; i <= n ; i++)
 	{
+		if (n >= *src)
+		{
+			break;
+		}
 		*dest = *src;
 		dest++;
 		src++;
 	}
+
 
 	return (result);
 }
