@@ -19,13 +19,14 @@ char *_strncat(char *dest, char *src, int n)
 
 	for (i = 0 ; i <= n ; i++)
 	{
+
+		*dest = *src;
+		dest++;
+		src++;
 		if (n >= *src)
 		{
 			break;
 		}
-		*dest = *src;
-		dest++;
-		src++;
 	}
 
 
