@@ -9,7 +9,6 @@
 char *_strncat(char *dest, char *src, int n)
 
 {
-	int i;
 	char *result = dest;
 
 	while (*dest != '\0')
@@ -17,16 +16,12 @@ char *_strncat(char *dest, char *src, int n)
 		dest++;
 	}
 
-	for (i = 0 ; i <= n ; i++)
+	while (*src != '\0' && n > 0)
 	{
-
 		*dest = *src;
 		dest++;
 		src++;
-		if (n >= *src)
-		{
-			break;
-		}
+		n--;
 	}
 
 
