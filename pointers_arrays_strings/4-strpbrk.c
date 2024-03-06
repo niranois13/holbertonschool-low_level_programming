@@ -19,6 +19,10 @@ char *_strpbrk(char *s, char *accept)
 			{
 				return (&s[i]);
 			}
+			else if (accept == NULL || *accept == '\0')
+			{
+				return (NULL);
+			}
 		}
 		i++;
 	}
