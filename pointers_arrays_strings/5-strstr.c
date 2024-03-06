@@ -9,11 +9,6 @@
 char *_strstr(char *haystack, char *needle)
 
 {
-	if (*needle == '\0')
-	{
-		return (haystack);
-	}
-
 	while (*needle != '\0')
 	{
 		char *n = needle;
