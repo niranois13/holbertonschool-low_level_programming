@@ -2,15 +2,54 @@
 #include <stdlib.h>
 #include "main.h"
 /**
+* calc_coins - calculates minimum number of coins to make change for money
+* @money: the amount of money
 *
-*
-*
-*
+* Return: 0 if success
+*/
+int calc_coins(int money)
+{
+	int cents = 0;
+
+	while (money > 0)
+	{
+		if (money >= 25)
+		{
+			money -= 25;
+			cents++;
+		}
+		else if (money >= 10)
+		{
+			money -= 10;
+			cents++;
+		}
+		else if (money >= 5)
+		{
+			money -= 5;
+			cents++;
+		}
+		else if (money >= 2)
+		{
+			money -= 2;
+			cents++;
+		}
+		else if (money >= 1)
+		{
+			money -= 1;
+			cents++;
+		}
+	}
+	return (cents);
+}
+/**
+* main - Entry point, prints minimum number of coins to make change for money
+* @argc: argument counter
+* @argv: argument vector
+* Return: 0 if success
 */
 int main(int argc, char *argv[])
 {
 	int coins;
-	int cents = 0;
 
 	if (argc != 2)
 	{
@@ -26,35 +65,8 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	while (coins > 0)
-	{
-		if (coins >= 25)
-		{
-			coins = coins - 25;
-			cents++;
-		}
-		else if (coins >= 10)
-		{
-			coins = coins - 10;
-			cents++;
-		}
-		else if (coins >= 5)
-		{
-			coins = coins - 5;
-			cents++;
-		}
-		else if (coins >= 2)
-		{
-			coins = coins - 2;
-			cents++;
-		}
-		else if (coins >= 1)
-		{
-			coins = coins - 1;
-			cents++;
-		}
-	}
-
-	printf("%d\n", cents);
+	printf("%d\n", calc_coins(coins));
 	return (0);
+
 }
+
