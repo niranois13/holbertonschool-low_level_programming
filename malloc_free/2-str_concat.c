@@ -22,6 +22,15 @@ char *str_concat(char *s1, char *s2)
 		length1++;
 	}
 
+	if (s1 == NULL)
+	{
+		*s1 = '\0';
+	}
+	if (s2 == NULL)
+	{
+		*s2 = '\0';
+	}
+
 	ptr = (char *) malloc((length1 + length2 + 1) * sizeof(char));
 	if (ptr == NULL)
 		return (NULL);
