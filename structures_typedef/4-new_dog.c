@@ -50,7 +50,7 @@ char *_strdup(char *str)
 	int l = 0;
 	int i;
 
-	if (str == 0)
+	if (str == NULL)
 		return (NULL);
 
 	while (str[l] != '\0')
@@ -66,6 +66,8 @@ char *_strdup(char *str)
 	{
 		ptr[i] = str[i];
 	}
+
+	ptr[l] = '\0';
 
 	return (ptr);
 }
