@@ -6,7 +6,6 @@
 
 /**
 * struct list_t - definition of a linked list structure
-* @data: data hold by a node
 * @str: a string
 * @len: length of the string
 * @next: pointer to the next node
