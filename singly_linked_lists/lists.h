@@ -7,11 +7,15 @@
 /**
 * struct list_t - definition of a linked list structure
 * @data: data hold by a node
+* @str: a string
+* @len: length of the string
 * @next: pointer to the next node
 */
 typedef struct list_t
 {
 	int data;
+	char *str;
+	int len;
 	struct list_t *next;
 } list_t;
 
