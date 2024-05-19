@@ -7,9 +7,9 @@ This trimester was about learning the basics of **C**, such as *functions*, *loo
 ### Table of Contents:
 (Ordered according to the curriculum)
 
-1. [hello_world] ((https://github.com/niranois13/holbertonschool-low_level_programming/tree/main/hello_world))
-2. [variables_if_else_while] (https://github.com/niranois13/holbertonschool-low_level_programming/tree/main/variables_if_else_while)
-3. [functions_nested_loops] (https://github.com/niranois13/holbertonschool-low_level_programming/tree/main/functions_nested_loops)
+1. [hello_world](.../tree/main/hello_world)
+2. [variables_if_else_while](.../tree/main/variables_if_else_while)
+3. [functions_nested_loops](.../tree/main/functions_nested_loops)
 4. [more_functions_nested_loops] (https://github.com/niranois13/holbertonschool-low_level_programming/tree/main/more_functions_nested_loops) 
 5. [pointers_arrays_strings] (https://github.com/niranois13/holbertonschool-low_level_programming/tree/main/pointers_arrays_strings)
 6. [recursion] (https://github.com/niranois13/holbertonschool-low_level_programming/tree/main/recursion)
