@@ -2,7 +2,6 @@
 ## From week 3 to week 9 at Holberton School Thonon-Les-Bains
 
 This repository contains the different projects I have made during the major part of my first trimester at **Holberton School**.
-
 This trimester was about learning the basics of **C**, such as *functions*, *loops*, *data structures*, and even *algorithms*.
 
 ### Table of Contents:
